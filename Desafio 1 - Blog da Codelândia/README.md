@@ -1,10 +1,10 @@
 # <strong>Blog da Codelândia</strong>
 
 # Versão para Desktop:
- ![image]()
+ ![image](https://github.com/marcosdevg/Desafios_da_Codelandia/blob/main/Desafio%201%20-%20Blog%20da%20Codel%C3%A2ndia/Vers%C3%A3o-final-desktop.png)
 
 # Versão Mobile:
-![image]()
+![image](https://github.com/marcosdevg/Desafios_da_Codelandia/blob/main/Desafio%201%20-%20Blog%20da%20Codel%C3%A2ndia/vers%C3%A3o-final-mobile.png)
 
 # 🔨 Ferramentas
 - [Html](https://www.w3schools.com/html/)
