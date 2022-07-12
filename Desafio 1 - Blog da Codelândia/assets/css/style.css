@@ -1,0 +1,256 @@
+/* imports */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* <!--Inicio - Header--> */
+header {
+  height: 238px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 42px 0 42px 0;
+  justify-content: space-between;
+  color: #FFFFFF;
+  background: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+}
+
+.header__box {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Lexend Deca', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.header__pesquisa {
+  width: 900px;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 20px 83px;
+  border: none;
+  background-image: url(../img/lupa.svg);
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+  background-size: 43px;
+  outline: none;
+  color: white;
+}
+
+::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+  opacity: 0.5;
+}
+/* <!--Fim - Header--> */
+/* Inicio - seção */
+section {
+  background-color: #F3F5F7;
+  display: flex;
+  align-items: center;
+  padding: 89px 0 89px 0;
+  flex-direction: column;
+  gap: 50px;
+}
+/* Inicio - Noticias */
+.card {
+  width: 900px;
+  padding: 25px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+  border-radius: 5px;
+}
+
+.card--flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__data {
+  font-family: 'Lexend Deca', sans-serif;
+  font-family: Lexend Deca;
+  font-size: 16px;
+  font-weight: 400;
+  color: #717171;
+  margin-bottom: 22px;
+}
+
+.card__icone {
+  width: 21.88px;
+  height: 19.23px;
+  color: #574AE8;
+  font-size: 21.88px;
+}
+
+.card__icone:hover {
+  color: rgb(255, 183, 50);
+}
+
+.card__titulo {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 32.5px;
+  color: #1A202C;
+  margin-bottom: 8px;
+}
+
+.card__paragrafo {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  color: #717171;
+}
+/* Fim - Noticias */
+/* Inicio - Footer */
+footer {
+  width: inherit;
+  padding: 20px 10px 20px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+  color: white;
+
+}
+
+.footer_paragrafo {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.footer_paragrafo span {
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+.footer__ancora+.footer__ancora {
+  margin-left: 35px;
+}
+
+.ancora__icone {
+  font-size: 37px;
+  transition: transform .3s ease;
+  color: white;
+}
+
+.ancora__icone:hover {
+  transform: scale(1.3)
+}
+/* Fim - Footer */
+/* Inicio - Responsividade */
+@media (max-width: 1000px) {
+  .header__box {
+    width: 670px;
+  }
+
+  .header__pesquisa {
+    width: 670px;
+  }
+
+  .card {
+    width: 670px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__box {
+    width: 470px;
+  }
+
+  .header__pesquisa {
+    width: 470px;
+  }
+
+  .card {
+    width: 470px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__box {
+    width: 370px;
+    font-size: 21px;
+  }
+
+  .header__pesquisa {
+    width: 370px;
+  }
+
+  .card {
+    width: 370px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer_paragrafo {
+    font-size: 20px;
+  }
+
+  .card__data {
+    font-size: 18px;
+  }
+
+  .card__titulo {
+    font-size: 22px;
+  }
+
+  .card__paragrafo {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 466px) {
+  .header__box {
+    width: 330px;
+    font-size: 18px;
+  }
+
+  .header__pesquisa {
+    width: 330px;
+  }
+
+  .card {
+    width: 330px;
+  }
+
+  .card__data {
+    font-size: 14px;
+  }
+
+  .card__titulo {
+    font-size: 18px;
+  }
+
+  .card__paragrafo {
+    font-size: 14px;
+  }
+
+  .footer_paragrafo {
+    text-align: center;
+  }
+}
+/* Fim - Responsividade */
+
+.card {
+  visibility: hidden;  /* Animation on Scroll - Sroll Reveal */
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Metadados -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Titulo -->
+  <title>Desafio 1</title>
+  <!-- Link de importação da biblioteca ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- link de importação dos icones -->
+  <script src="https://kit.fontawesome.com/4ac0b6bb86.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!--Inicio - Header-->
+  <header>
+    <div class="header__box">
+      <h2> Codelândia</h2>
+      <h2>blog</h2>
+    </div>
+    <input placeholder="Pesquisar no Blog" type="text" class="header__pesquisa">
+  </header>
+  <!--Fim - Header-->
+  <!--Inicio - seção-->
+  <section>
+    <!--Notícia 1-->
+    <div class="card">
+      <div class="card--flex">
+        <p class="card__data">
+          09 de jul, 2022
+        </p>
+        <i class="fa-regular fa-heart card__icone"></i>
+
+      </div>
+      <h3 class="card__titulo">
+        Agora é oficial: o Windows 12 está vindo
+      </h3>
+      <p class="card__paragrafo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis soluta nulla eligendi magni, eum
+        repellendus neque ipsa repudiandae nihil asperiores provident, pariatur totam? Dignissimos non ea sed vero, nemo
+        nobis, neque doloribus molestiae dolorum obcaecati fuga ratione exercitationem vitae. Dolores quaerat
+      </p>
+    </div>
+    <!--Notícia 2-->
+    <div class="card">
+      <div class="card--flex">
+        <p class="card__data">
+          09 de jul, 2022
+        </p>
+        <i class="fa-regular fa-heart card__icone"></i>
+      </div>
+      <h3 class="card__titulo">
+        Chuva e ventos fortes neste começo de semana.
+      </h3>
+      <p class="card__paragrafo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis soluta nulla eligendi magni, eum
+        repellendus neque ipsa repudiandae nihil asperiores provident, pariatur totam? Dignissimos non ea sed vero, nemo
+        nobis, neque doloribus molestiae dolorum obcaecati fuga ratione exercitationem vitae. Dolores quaerat
+      </p>
+    </div>
+    <!--Notícia 3-->
+    <div class="card">
+      <div class="card--flex">
+        <p class="card__data">
+          09 de jul, 2022
+        </p>
+        <i class="fa-regular fa-heart card__icone"></i>
+      </div>
+      <h3 class="card__titulo">
+        Elon Musk desiste de comprar o Twitter
+      </h3>
+      <p class="card__paragrafo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis soluta nulla eligendi magni, eum
+        repellendus neque ipsa repudiandae nihil asperiores provident, pariatur totam? Dignissimos non ea sed vero, nemo
+        nobis,.
+      </p>
+    </div>
+    <!--Notícia 4-->
+    <div class="card">
+      <div class="card--flex">
+        <p class="card__data">
+          09 de jul, 2022
+        </p>
+        <i class="fa-regular fa-heart card__icone"></i>
+      </div>
+      <h3 class="card__titulo">
+        Após 20 dias, Binance volta a liberar saques no Brasil
+      </h3>
+      <p class="card__paragrafo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis soluta nulla eligendi magni, eum
+        repellendus neque ipsa repudiandae nihil asperiores provident, pariatur totam? Dignissimos non ea sed vero, nemo
+        nobis, neque doloribus molestiae dolorum obcaecati fuga ratione exercitationem.
+      </p>
+    </div>
+  </section>
+  <!--Fim - Seção-->
+  <!--Inicio - Footer-->
+  <footer>
+    <p class="footer_paragrafo">Desenvolvido com ❤ por <span>Marcos da S. Gomes</span></p>
+    <div>
+      <a href="#" class="footer__ancora" ><abbr title="Linkedin"><i class="fa-brands fa-linkedin  ancora__icone "></i></abbr></a>
+      <a href="#" class="footer__ancora"><abbr title="GitHub"><i class="fa-brands fa-github ancora__icone "></abbr></i></a>
+    </div>
+  </footer>
+  <!--Fim - Footer-->
+  <script>
+    const sr = ScrollReveal({
+  origin: 'left',
+  distance: '50px',
+  duration: 900,
+  reset: true
+});
+sr.reveal('.card', {duration: 2000});
+  </script>
+</body>
+
+</html>
